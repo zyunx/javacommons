@@ -7,13 +7,22 @@
  */
 package net.zyunx.javacommons.api;
 
+import java.io.Serializable;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 /**
  * API response object
  * @author zyunx 201700801
  *
  */
-public class ApiRsp<T> {
+public class ApiRsp<T> implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private String code;
 	
 	private T data;
@@ -34,5 +43,7 @@ public class ApiRsp<T> {
 		this.data = data;
 	}
 	
-	
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
 }

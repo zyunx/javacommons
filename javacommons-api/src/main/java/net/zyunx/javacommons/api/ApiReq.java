@@ -7,11 +7,23 @@
  */
 package net.zyunx.javacommons.api;
 
+import java.io.Serializable;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
 /**
  * API request object
  * @author zyunx 201700801
  *
  */
-public class ApiReq {
+public class ApiReq implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
 }

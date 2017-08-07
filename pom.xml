@@ -12,6 +12,8 @@
     <properties>
 	   <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	   
+	   <commons-lang.version>3.6</commons-lang.version>
     </properties>
 
     <dependencies>
@@ -25,5 +27,6 @@
   
     <modules>
         <module>javacommons-api</module>
+        <module>javacommons-authn-api</module>
     </modules>
 </project>

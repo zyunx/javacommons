@@ -8,18 +8,14 @@
 		<artifactId>javacommons-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>javacommons-api</artifactId>
-	<packaging>jar</packaging>
-	<name>javacommons-api</name>
-	<url>http://maven.apache.org</url>
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+	<artifactId>javacommons-authn-api</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>javacommons-authn-api</name>
+	<dependencies>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang.version}</version>
+            <groupId>net.zyunx.javacommons</groupId>
+            <artifactId>javacommons-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-    </dependencies>
-
+	</dependencies>
 </project>
